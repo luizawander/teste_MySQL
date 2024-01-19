@@ -44,21 +44,5 @@ Você também pode acessar o artigo completo sobre as funcionalidades do .JSON e
 
 ## Verificações de packageReference
 
-Aconteceu comigo de quando não adicionar todos os packeagereferences quando eu adicionei o NuGet do MySQL, com isso precisei pesquisar como fazer manualmente. Então, antes de seguir, verifique no seu arquivo .csprojet se os comandos abaixo estão todos inseridos. Se não, adicione eles manualmente:
+Aconteceu comigo de quando não adicionar todos os packeagereferences quando eu adicionei o NuGet do MySQL, com isso precisei pesquisar como fazer manualmente. Então, antes de seguir, verifique no seu arquivo .csprojet se os comandos abaixo estão todos inseridos. Se não, adicione eles manualmente: 
 
-<Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="8.0.0" />
-    <PackageReference Include="MySql.Data" Version="8.3.0" />
-    <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.22" />
-  </ItemGroup>
-
-</Project>

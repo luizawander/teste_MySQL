@@ -1,6 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
-using Microsoft.Extensions.Configuration; // Adicione esta linha
+using Microsoft.Extensions.Configuration; 
 
 
 class Program

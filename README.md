@@ -44,5 +44,9 @@ Você também pode acessar o artigo completo sobre as funcionalidades do .JSON e
 
 ## Verificações de packageReference
 
-Aconteceu comigo de quando não adicionar todos os packeagereferences quando eu adicionei o NuGet do MySQL, com isso precisei pesquisar como fazer manualmente. Então, antes de seguir, verifique no seu arquivo .csprojet se os comandos abaixo estão todos inseridos. Se não, adicione eles manualmente: 
+Aconteceu comigo de quando não adicionar todos os packeagereferences quando eu adicionei o NuGet do MySQL, com isso precisei pesquisar como fazer manualmente. Então, antes de seguir, verifique no seu arquivo .csprojet se os comandos abaixo estão todos inseridos. Se não, adicione eles manualmente: (https://github.com/luizawander/teste_MySQL/blob/main/codesnap/csprojet.png)
 
+
+## Program
+
+Agora trabalhando de fato no conector da nossa tabela, irei passar aqui o codesnap de um exemplo de como conectar e puxar os dados se sua tabela e verificar se realmente a conexão está sendo feita de maneira certa. Após a visualização, acompanha a explicação da construção do código:

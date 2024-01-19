@@ -17,18 +17,19 @@ class Program
         using MySqlConnection connection = new MySqlConnection(connectionString);
         connection.Open();
 
-        string sqlQuery = "SELECT nome_Cliente, email_Cliente FROM cliente";
+        string sqlQuery = "SELECT nome_Cliente, CPF_Cliente FROM cliente";
         using MySqlCommand cmd = new MySqlCommand(sqlQuery, connection);
 
          using MySqlDataReader reader = cmd.ExecuteReader();
         Console.WriteLine("Conexão bem-sucedida!");
+
         // Processar os resultados
          while (reader.Read())
         {
         string nome = reader.GetString("nome_Cliente");
-        string email = reader.GetString("email_Cliente"); // Correção aqui
+        string CPF  = reader.GetString("CPF_Cliente"); 
 
-         Console.WriteLine($"Nome: {nome}, email: {email}");
+         Console.WriteLine($"Nome: {nome}, CPF: {CPF}");
          }
     }
 }

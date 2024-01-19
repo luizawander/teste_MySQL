@@ -23,4 +23,4 @@ Agora precisamos adicionar um arquivo .JSON. Segundo o blog RockContent, "JSON, 
 
 Primeiro você deve criar um novo arquivo em seu programa, adicionado o .json ao fim. Um padrão muito usado por programadores é colocar o nome de **appsettings.json**.
 
-Em seguida, adicione os seguintes comando:
+Em seguida, adicione os seguintes comando: 

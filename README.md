@@ -24,3 +24,41 @@ Agora precisamos adicionar um arquivo .JSON. Segundo o blog RockContent, "JSON, 
 Primeiro você deve criar um novo arquivo em seu programa, adicionado o .json ao fim. Um padrão muito usado por programadores é colocar o nome de **appsettings.json**.
 
 Em seguida, adicione os seguintes comando: 
+
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=NomeDoServidor;Database=NomeDoBancoDeDados;User=Usuario;Password=Senha;"
+  }
+}
+
+**Descrição:**
+Server: você deverá passar o local de seu servidor, caso seja local: localhost. Se for remoto, adicione seu endereço. 
+Databse: nome do banco de dados no qual você deseja conectar em seu programa. 
+User: seu usuário no MySQL. geralmente em servidores locais, o nome do user deve ser "root".
+Passeword: a senha que você criou quando instalou o programa em sua máquina.
+
+Nesse link você pode acessar meu code snap para ver como escrevi na prática: (https://github.com/luizawander/teste_MySQL/raw/main/codesnap/json.png)
+
+Você também pode acessar o artigo completo sobre as funcionalidades do .JSON em: https://rockcontent.com/br/blog/json/
+
+
+## Verificações de packageReference
+
+Aconteceu comigo de quando não adicionar todos os packeagereferences quando eu adicionei o NuGet do MySQL, com isso precisei pesquisar como fazer manualmente. Então, antes de seguir, verifique no seu arquivo .csprojet se os comandos abaixo estão todos inseridos. Se não, adicione eles manualmente:
+
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="8.0.0" />
+    <PackageReference Include="MySql.Data" Version="8.3.0" />
+    <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.22" />
+  </ItemGroup>
+
+</Project>

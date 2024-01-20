@@ -9,7 +9,11 @@ Abaixo vou deixar a descrição de cada etapa da construção dessa conexão.
 
 A primeira coisa a se fazer é criar seu projeto no .NET. Execute em seu terminal o comando **"dotnet new console"** e aguarde seu projeto ser gerado.
 
-Após gerar, adicione também no terminal o comanado **"dotnet add package MySql.Data"**. Ele fará com que os pocotes NuGet sejam instalados em seu programa.
+Após gerar, adicione também no terminal o comando **"dotnet add package MySql.Data"**. Ele fará com que os pocotes NuGet sejam instalados em seu programa.
+
+```
+dotnet add package MySql.Data
+```
 
 
 **obs:** Segundo o artigo "Uma introdução ao NuGet", disponibilizado pela Microsoft, os NuGet são "um arquivo ZIP com a extensão .nupkg que contém o código compilado (DLLs), outros arquivos relacionados a esse código e um manifesto descritivo que inclui informações como o número de versão do pacote. Os desenvolvedores com código para compartilhar criam pacotes e os publicam em um host público ou privado. Os consumidores de pacote obtêm esses pacotes de hosts adequados, os adicionam aos seus projetos e chamam a funcionalidade de um pacote no código do projeto. Em seguida, o próprio NuGet manipula todos os detalhes de intermediários."

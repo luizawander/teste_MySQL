@@ -24,27 +24,23 @@ Agora precisamos adicionar um arquivo .JSON. Segundo o blog RockContent, "JSON, 
 Primeiro você deve criar um novo arquivo em seu programa, adicionado o .json ao fim. Um padrão muito usado por programadores é colocar o nome de **appsettings.json**.
 
 Em seguida, adicione os seguintes comando: 
+![json](https://github.com/luizawander/teste_MySQL/assets/154068580/a3dd6327-5dfe-454a-ba20-cf9649abdb11)
 
-{
-  "ConnectionStrings": {
-    "DefaultConnection": "Server=NomeDoServidor;Database=NomeDoBancoDeDados;User=Usuario;Password=Senha;"
-  }
-}
 
 **Descrição:**
-Server: você deverá passar o local de seu servidor, caso seja local: localhost. Se for remoto, adicione seu endereço. 
-Databse: nome do banco de dados no qual você deseja conectar em seu programa. 
-User: seu usuário no MySQL. geralmente em servidores locais, o nome do user deve ser "root".
-Passeword: a senha que você criou quando instalou o programa em sua máquina.
-
-Nesse link você pode acessar meu code snap para ver como escrevi na prática: (https://github.com/luizawander/teste_MySQL/raw/main/codesnap/json.png)
+1. Server: você deverá passar o local de seu servidor, caso seja local:
+2. localhost. Se for remoto, adicione seu endereço.
+3. Databse: nome do banco de dados no qual você deseja conectar em seu programa.
+4. User: seu usuário no MySQL. geralmente em servidores locais, o nome do user deve ser "root".
+5. Passeword: a senha que você criou quando instalou o programa em sua máquina.
 
 Você também pode acessar o artigo completo sobre as funcionalidades do .JSON em: https://rockcontent.com/br/blog/json/
 
 
 ## Verificações de packageReference
 
-Aconteceu comigo de quando não adicionar todos os packeagereferences quando eu adicionei o NuGet do MySQL, com isso precisei pesquisar como fazer manualmente. Então, antes de seguir, verifique no seu arquivo .csprojet se os comandos abaixo estão todos inseridos. Se não, adicione eles manualmente: (https://github.com/luizawander/teste_MySQL/blob/main/codesnap/csprojet.png)
+Aconteceu comigo de não adicionar todos os packeagereferences quando eu instalei o NuGet do MySQL, com isso precisei pesquisar como fazer manualmente. Então, antes de seguir, verifique no seu arquivo .csprojet se os comandos abaixo estão todos inseridos. Se não, adicione eles manualmente: 
+![csprojet](https://github.com/luizawander/teste_MySQL/assets/154068580/43cb75a1-f14e-450e-8800-51c480da8167)
 
 
 ## Program

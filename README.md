@@ -1,6 +1,6 @@
 # Descrição do Programa.
 
-Olá. Este repositório foi criado com o objetivo de entender o caminho para se criar uma conexão com um tabela MySQL no Visual Studio Code, em um projeto em C#. 
+Olá. Este repositório foi criado com o objetivo de entender o caminho para se criar uma conexão com uma tabela MySQL no Visual Studio Code, em um projeto em C#. 
 Abaixo vou deixar a descrição de cada etapa da construção dessa conexão. 
 
 **Este estudo foi feito com base em alguns fóruns e documentos encontrados na internet e adaptados para a minha reallidade.**
@@ -37,11 +37,10 @@ Em seguida, adicione os seguintes comando:
 ````
 
 **Descrição:**
-1. Server: você deverá passar o local de seu servidor, caso seja local:
-2. localhost. Se for remoto, adicione seu endereço.
-3. Databse: nome do banco de dados no qual você deseja conectar em seu programa.
-4. User: seu usuário no MySQL. geralmente em servidores locais, o nome do user deve ser "root".
-5. Passeword: a senha que você criou quando instalou o programa em sua máquina.
+1. Server: você deverá passar o local de seu servidor, caso seja local: localhost. Se for remoto, adicione seu endereço.
+2. Databse: nome do banco de dados no qual você deseja conectar em seu programa.
+3. User: seu usuário no MySQL. geralmente em servidores locais, o nome do user deve ser "root".
+4. Password: a senha que você criou quando instalou o programa em sua máquina.
 
 Você também pode acessar o artigo completo sobre as funcionalidades do .JSON em: https://rockcontent.com/br/blog/json/
 
@@ -60,7 +59,7 @@ Aconteceu comigo de não adicionar todos os packeagereferences quando eu instale
 
 ## Program
 
-Agora trabalhando de fato no conector da nossa tabela, irei passar aqui o codesnap de um exemplo de como conectar e puxar os dados se sua tabela e verificar se realmente a conexão está sendo feita de maneira certa. Após a visualização, acompanhe a explicação da construção das principais partes do códigp:
+Agora trabalhando de fato no conector da nossa tabela, irei passar aqui o codesnap de um exemplo de como conectar e puxar os dados se sua tabela e verificar se realmente a conexão está sendo feita de maneira certa. Após a visualização, acompanhe a explicação da construção das principais partes do código:
 
 <img src="https://github.com/luizawander/teste_MySQL/assets/154068580/8266ada5-cc27-4565-b6d8-cb0655793dae" width="500" height="500">
 
@@ -71,7 +70,7 @@ using System;
 using Microsoft.Extensions.Configuration; 
 ```
 1. MySql.Data.MySqlClient é necessário para trabalhar com o MySQL.
-2. Microsoft.Extensions.Configuration é usado para configurar e ler dados de configuração.
+2. Microsoft.Extensions.Configuration é usado para configurar e ler dados de configuração, inclusive das que adicionamos.
 
 ```
 IConfiguration configuration = new ConfigurationBuilder()
@@ -93,7 +92,7 @@ IConfiguration configuration = new ConfigurationBuilder()
 
 9. reloadOnChange: true especifica que as configurações devem ser recarregadas automaticamente se o arquivo for alterado.
 
-10. .Build(): Constrói a configuração. Esse método finaliza a configuração, tornando-a imutável. Depois de chamar Build(), você não pode mais modificar a configuração. Retorna um objeto IConfiguration que representa as configurações carregadas.
+10. .Build(): Constrói a configuração. Esse método finaliza a configuração, a tornando imutável. Depois de chamar Build(), você não pode mais modificar a configuração. Retorna um objeto IConfiguration que representa as configurações carregadas.
 
 ```
    string connectionString = configuration.GetConnectionString("DefaultConnection");

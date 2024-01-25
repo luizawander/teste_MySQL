@@ -31,7 +31,7 @@ Em seguida, adicione os seguintes comando:
 ```
 {
     "ConnectionStrings": {
-      "DefaultConnection": "Server=localhost;Database=zapzum1;User=root;Password=Regin@0812"
+      "DefaultConnection": "Server=localhost;Database=zapzum1;User=root;Password=**************"
     }
   }
 ````

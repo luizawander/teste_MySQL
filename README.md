@@ -3,7 +3,10 @@
 Olá. Este repositório foi criado com o objetivo de entender o caminho para se criar uma conexão com uma tabela MySQL no Visual Studio Code, em um projeto em C#. 
 Abaixo vou deixar a descrição de cada etapa da construção dessa conexão. 
 
-**Este estudo foi feito com base em alguns fóruns e documentos encontrados na internet e adaptados para a minha reallidade.**
+**OBS: Este estudo foi feito com base em alguns fóruns e documentos encontrados na internet e adaptados para a minha reallidade.**
+
+**OBS: Você pode acompanhar o tutorial dos passos através do meu canal no Youtube em: https://www.youtube.com/watch?v=osT-W06p96c&t=172s
+
 
 ## Comandos iniciais.
 

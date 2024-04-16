@@ -1,4 +1,4 @@
-# Descrição do Programa.
+# Descrição do projeto.
 
 Olá. Este repositório foi criado com o objetivo de entender o caminho para se criar uma conexão com uma tabela MySQL no Visual Studio Code, em um projeto em C#. 
 Abaixo vou deixar a descrição de cada etapa da construção dessa conexão. 
